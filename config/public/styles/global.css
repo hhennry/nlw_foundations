@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* Font's */
+    --h1: ;
+    --h2: ;
+    --h3: ;
+    --h4: ;
+    --h5: ;
+    --h6: ;
+
+    /* Effect's */
+    --focus: #;
+    --focus-hover: #;
+
+    /* ScrollBar */
+    --bar-color: #;
+    --bar-background: #;
+    
+    /* SellectBar */
+    --selec-color: #;
+    --bar-background: #;
+}
+
+/* Titles Presets */
+h1 {
+  font: var(--h1);
+}
+
+h2 {
+  font: var(--h2);
+}
+
+h3 {
+  font: var(--h3);
+}
+
+h4 {
+  font: var(--h4);
+}
+
+h5 {
+  font: var(--h5);
+}
+
+h6 {
+  font: var(--h6);
+}
+
+/* Scroll Bar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--bar-color) var(--bar-background);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bar-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--bar-color);
+  border-radius: 20px;
+  border: 4px solid var(--bar-background);
+}
+
+/* Effects */
+:focus-visible {
+  outline: 2px dashed var(--focus);
+  color: var(--focus-hover);
+}
+
+::selection {
+  background: var(--selec-background);
+  color: var(--selec-color);
+}
+
+::-moz-selection {
+  background: var(--selec-background);
+  color: var(--selec-color);
+}
